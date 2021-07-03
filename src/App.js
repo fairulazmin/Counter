@@ -39,9 +39,8 @@ class App extends Component {
     this.setState((state) => {
       const { index } = event.target.dataset;
       const counters = [...state.counters];
-      const counter = { ...state.counters[index] };
-      counter.value++;
-      counters.splice(index, 1, counter);
+      counters[index] = { ...counters[index] };
+      counters[index].value++;
       return { counters };
     });
   };
@@ -50,9 +49,8 @@ class App extends Component {
     this.setState((state) => {
       const { index } = event.target.dataset;
       const counters = [...state.counters];
-      const counter = { ...state.counters[index] };
-      counter.value--;
-      counters.splice(index, 1, counter);
+      counters[index] = { ...counters[index] };
+      counters[index].value--;
       return { counters };
     });
   };
