@@ -1,3 +1,5 @@
+![img](public/counter.png)
+
 ## Clone this repo into your project
 
 ```
